@@ -32,9 +32,8 @@ const addCart = () => {
 
 <template>
   <section class="bg-white shadow-xl rounded-xl overflow-hidden">
-    <div :class="`w-full h-[200px] p-5 bg-gray-300`">
-      <img :src="baseStorageUrl + props.product.image" class="w-full h-full
-      object-contain" />
+    <div :class="`w-full h-[200px] p-5 bg-yellow-200`">
+      <img :src="baseStorageUrl + props.product.image" class="w-full h-full rounded-xl" />
     </div>
     <div class="px-5 pb-5 pt-9 relative">
 
@@ -46,6 +45,10 @@ const addCart = () => {
       <div class="flex justify-between items-center">
         <span class="text-sm font-normal">{{ props.product.category }}</span>
         <span class="text-sm font-normal">${{ props.product.price }}</span>
+      </div>
+      <hr>
+      <div>
+        <span class="text-sm font-normal">{{ props.product.description }}</span>
       </div>
       <div :class="`cursor-pointer absolute -top-5 right-7 w-[50px] h-[50px]
       ${props.product.isCart ? 'bg-blue-600 text-white' : 'bg-white'} shadow-xl

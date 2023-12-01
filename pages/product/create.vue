@@ -18,9 +18,9 @@ const { categories } = storeToRefs(categoryStore);
 categoryStore.getAllCategory();
 
 const formCreateProduct = [
-  { name: "name", label: "Name", type: "text", value: "", placeholder: "Men's Streetwear", required: true },
-  { name: "description", label: "Description", type: "text", value: "", placeholder: "This shirt features a vibrant and eye-catching color and a solid pattern that will give you a happy feeling...", required: true },
-  { name: "price", label: "Price", type: "number", value: "", placeholder: "$30", required: true },
+  { name: "name", label: "Name", type: "text", value: "", required: true },
+  { name: "description", label: "Description", type: "text", value: "", required: true },
+  { name: "price", label: "Price", type: "number", value: "", required: true },
   { name: "image", label: "Image", type: "file", value: {}, placeholder: "", required: true },
   { name: "category", label: "Category", type: "select", value: "", placeholder: "", required: true },
 ];
@@ -117,7 +117,7 @@ const uploadFile = async (formFile: any) => {
             :required="item.required"
           >
         </div>
-        <button type="submit" class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+        <button type="submit" class="text-white bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
           <span v-if="!isLoading">Submit</span>
           <div v-else class="flex items-center gap-3">
               <div class="w-5 h-5 rounded-full border-2 border-t-blue-500 animate-spin"></div>

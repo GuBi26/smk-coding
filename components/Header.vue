@@ -26,8 +26,7 @@ path: "/"
       <div class="container">
         <div class="flex justify-between items-center">
           <div>
-    <NuxtLink to="/" class="text-xl font-bold">SMK
-    Coding</NuxtLink>
+    <NuxtLink to="/" class="ml-5 text-xl font-bold">BintangShop</NuxtLink>
     </div>
     <nav class="flex items-center gap-6">
         <NuxtLink to="/" class="text-base">Home</NuxtLink>

@@ -1,19 +1,15 @@
 export const category: Category[] = [
     {
         id: 1,
-        name: "Baju",
+        name: "Appetizer",
     },
     {
         id: 2,
-        name: "Sepatu",
+        name: "Main Course",
     },
     {
         id: 3,
-        name: "Celana",
-    },
-    {
-        id: 4,
-        name: "Jam",
+        name: "Dessert",
     },
 ]
 export interface Category {
